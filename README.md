@@ -8,4 +8,13 @@ Emotion detection models created using a neural network.
 
 Poetric rhythm response created using AI technologies.
 
+
+EMOTIONS LIST {['surprise', 'boredom',
+  'happiness', 'neutral',
+  'empty', 'anger',
+  'fun', 'enthusiasm',
+  'hate', 'relief',
+  'worry', 'love',
+  'sadness']}
+
 100% Python 
