@@ -16,7 +16,7 @@ stop_words = set(stopwords.words('english'))
 
 steamer = WordNetLemmatizer()
 
-corpus = pd.read_csv('../corpus/text_emotion.csv', encoding='utf-8-sig')
+corpus = pd.read_csv('corpus/text_emotion.csv', encoding='utf-8-sig')
 corpus.drop(['tweet_id', 'author'], axis=1, inplace=True)
 
 
@@ -84,8 +84,8 @@ words = sorted(set(words))
 classes = sorted(set(classes))
 print(classes)
 
-pickle.dump(words, open('../models/nn/words.pkl', 'wb'))
-pickle.dump(classes, open('../models/nn/classes.pkl', 'wb'))
+pickle.dump(words, open('model/words.pkl', 'wb'))
+pickle.dump(classes, open('model/classes.pkl', 'wb'))
 
 ######################################################
 # Data preprocessing, Prepare Training Data
@@ -136,5 +136,5 @@ sgd = SGD(learning_rate=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 # Feeding the model with prepared data, 200 times with the medium amount of information(verbose = 1)
 hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
-model.save('../models/nn/chatbotmodel.h5', hist)
+model.save('../model/nn/chatbotmodel.h5', hist)
 print("Done")

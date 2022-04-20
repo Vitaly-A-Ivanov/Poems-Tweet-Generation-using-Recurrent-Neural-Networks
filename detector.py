@@ -9,11 +9,11 @@ from tensorflow.keras.models import load_model
 
 
 lemmatizer = WordNetLemmatizer()
-corpus = pd.read_csv('../corpus/text_emotion_clean.csv')
+corpus = pd.read_csv('corpus/text_emotion_clean.csv')
 
-words = pickle.load(open('../models/nn/words.pkl', 'rb'))
-classes = pickle.load(open('../models/nn/classes.pkl', 'rb'))
-model = load_model('../models/nn/chatbotmodel.h5')
+words = pickle.load(open('model/words.pkl', 'rb'))
+classes = pickle.load(open('model/classes.pkl', 'rb'))
+model = load_model('model/chatbotmodel.h5')
 
 # function for cleaning up the sentences
 def clean_up_sentence(sentence):
