@@ -1,0 +1,12 @@
+keras==2.7.0
+nltk==3.6.7
+pandas==1.4.2
+tensorflow-cpu==2.7.0
+numpy~=1.22.1
+tweepy~=4.8.0
+scikit-learn~=1.0.2
+wikipedia~=1.4.0
+pronouncing~=0.2.0
+matplotlib~=3.5.1
+wordcloud~=1.8.1
+python-dotenv~=0.20.0
