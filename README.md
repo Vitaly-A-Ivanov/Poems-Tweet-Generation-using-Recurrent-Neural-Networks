@@ -1,20 +1,11 @@
-# PoeticChatbotWithHumanEmotions
-
-This project is a research-based for computational creativity module in the University of Kent, where the system able to detect a user emotion based on his text input and respond with the same behavior and in rhythm .
-
-Corporas based on classified tweets.
-
-Emotion detection models created using a neural network.
-
-Poetric rhythm response created using AI technologies.
+# Poems/Tweet Generation using Recurrent Neural Networks
 
 
-EMOTIONS LIST {['surprise', 'boredom',
-  'happiness', 'neutral',
-  'empty', 'anger',
-  'fun', 'enthusiasm',
-  'hate', 'relief',
-  'worry', 'love',
-  'sadness']}
+This creative software can generate poems in the style of famous poets, tweets from famous people who were active on Twitter, or even WhatsApp messages based on the history of previous messages.
+For the texts mentioned above to be generated, recurrent neural networks (RNN) and, in particular, long short-term memory (LSTM) are utilised. Even though the project is still in its infancy, it has already demonstrated its ability to generate interesting texts, showing meaningfulness, grammaticality, and poeticness (in the case of poem creation).
 
-100% Python 
+
+
+
+
+100% Python, Keras, TensorFlow, NumPy
